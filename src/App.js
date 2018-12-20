@@ -10,9 +10,9 @@ class App extends Component {
     fields: {}
   };
 
+  // displays contents of fields when form submitted
   onSubmit = fields => {
     this.setState({fields});
-    console.log("App component got: ", fields);
   };
 
   render() {

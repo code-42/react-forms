@@ -9,12 +9,14 @@ export default class Form extends React.Component {
     password: ""
   };
 
+  // updates the state when form fields are filled in
   change = e => {
     this.setState({
       [e.target.name]: e.target.value
     });
   };
 
+  // Submit button event handler
   onSubmit = e => {
     e.preventDefault();
     console.log(this.state);
